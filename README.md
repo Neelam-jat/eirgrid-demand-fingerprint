@@ -2,7 +2,7 @@
 
 I analysed 11 years of Ireland's electricity demand. The growth isn't happening when you'd expect.
 
-![Night floor vs evening peak](charts/01_floor_vs_peak.png)
+![Night floor vs evening peak](01_floor_vs_peak.png)
 
 ## The finding
 
@@ -18,7 +18,7 @@ Humans sleep. Machines don't. Round-the-clock growth is the fingerprint of alway
 
 Grid forecasting models learn from history. I trained a standard gradient boosting model on 2015–2019 data only, then tested it on the years it had never seen.
 
-![Model bias](charts/02_model_bias.png)
+![Model bias](02_model_bias.png)
 
 In 2019 the model is nearly perfect: 50 MW average error, no systematic lean. By 2023 it under-forecasts by 75 MW *on average, every hour, always in the same direction*. A persistent one-directional bias is the statistical signature of a structural break. The model isn't noisy. It is faithfully predicting a country that no longer exists.
 
